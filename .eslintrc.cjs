@@ -9,7 +9,7 @@ module.exports = {
       env: {
         node: true
       },
-      files: ['!utilsAbaduna\\.eslintrc.{js,cjs}'],
+      files: ['.eslintrc.{js,cjs}'],
       parserOptions: {
         sourceType: 'script'
       }
@@ -20,7 +20,7 @@ module.exports = {
     "sourceType": "module"
 },
 
-  ignorePatterns: [".eslintrc.cjs","commitlint.config.cjs","vite.config.ts","index.d.ts"],
+  ignorePatterns: [".eslintrc.cjs", "dist", "vite.config.ts", "commitlint.config.cjs"],
   parserOptions: {
     "ecmaVersion": "latest",
     "sourceType": "module",
