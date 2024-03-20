@@ -1,0 +1,43 @@
+{
+  "name": "utilsabaduna",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/utilsabaduna.umd.cjs",
+  "scripts": {
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "npm run lint --fix",
+    "check:types": "tsc --noEmit",
+    "prepare": "husky install"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/utilsabaduna.js",
+      "require": "./dist/utilsabaduna.umd.cjs"
+    }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies":  {
+    "@commitlint/cli": "^19.2.0",
+    "@commitlint/config-conventional": "^19.1.0",
+    "@types/node": "^20.11.29",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-simple-import-sort": "^12.0.0",
+    "husky": "^8.0.0",
+    "prettier": "^3.2.5",
+    "typescript": "*",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.7.3"
+  }
+}
