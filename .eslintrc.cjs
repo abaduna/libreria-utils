@@ -9,22 +9,29 @@ module.exports = {
       env: {
         node: true
       },
-      files: ['.eslintrc.{js,cjs}'],
+      files: ['!utilsAbaduna\\.eslintrc.{js,cjs}'],
       parserOptions: {
         sourceType: 'script'
       }
     }
   ],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module'
-  },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+},
 
-  ignorePatterns: [],
+  ignorePatterns: [".eslintrc.cjs","commitlint.config.cjs","vite.config.ts","index.d.ts"],
+  parserOptions: {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "warnOnUnsupportedTypeScriptVersion": false
+},
   plugins: ['simple-import-sort'],
+
   rules: {
     'simple-import-sort/imports': 'error',
     '@typescript-eslint/no-explicit-any': 'error',
     '@typescript-eslint/space-before-function-paren': 'off'
-  }
+  },
+ 
 }
