@@ -72,10 +72,10 @@ function moveNPalabra(palabra, dicionario) {
         var letraCodificada = converNumberToString(numeberToPalabra);
         plabraCodificada.push(letraCodificada);
     }
-    return plabraCodificada.join(",");
+    return plabraCodificada.join("");
 }
 exports.moveNPalabra = moveNPalabra;
-console.log(moveNPalabra("aa", [1, 1]));
+console.log(moveNPalabra("aaa", [24, 23, 22]));
 // console.log(`converStrinToNumber`,converStrinToNumber("a"));
 // console.log(`moveNPlace`,moveNPlace("a",1));
 // console.log("converNumberToString",converNumberToString(1));

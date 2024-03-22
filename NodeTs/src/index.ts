@@ -72,7 +72,7 @@ export function moveNPalabra(palabra:string,dicionario:number[]) {
     return plabraCodificada.join("")
 }
 
-console.log(moveNPalabra("aa",[1,1]));
+console.log(moveNPalabra("aaa", [24, 23, 22]));
 // console.log(`converStrinToNumber`,converStrinToNumber("a"));
 // console.log(`moveNPlace`,moveNPlace("a",1));
 // console.log("converNumberToString",converNumberToString(1));
