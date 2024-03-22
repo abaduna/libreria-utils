@@ -60,8 +60,10 @@ export function moveNPalabra(palabra:string,dicionario:number[]) {
   const palabraToArry = palabra.split("")
   const plabraCodificada:string[] = []
     for (let i = 0; i < palabraToArry.length; i++) {
+        console.log(palabraToArry[i],dicionario[i]);
+        
      const numeberToPalabra= moveNPlace(palabraToArry[i],dicionario[i])
-     if (numeberToPalabra === undefined) {
+     if (typeof numeberToPalabra === 'undefined') {
       return
      }
      const letraCodificada = converNumberToString(numeberToPalabra)
@@ -69,3 +71,8 @@ export function moveNPalabra(palabra:string,dicionario:number[]) {
     }
     return plabraCodificada.join("")
 }
+
+console.log(moveNPalabra("aa",[1,1]));
+// console.log(`converStrinToNumber`,converStrinToNumber("a"));
+// console.log(`moveNPlace`,moveNPlace("a",1));
+// console.log("converNumberToString",converNumberToString(1));
