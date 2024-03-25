@@ -29,17 +29,11 @@ const abcInNumber: ABCInNumber = {
 export function converStrinToNumber(s: string): number {
   let totalValue: number = 0
   const lowerCaseS = s.toLowerCase()
-  // for (const later of abcInNumber) {
-  //   if (later[0] === lowerCaseS) {
-  //     totalValue = later[1]
-  //   }
 
-  //   return totalValue
-  // }
   for (const later in abcInNumber) {
     if (later === lowerCaseS) {
       totalValue = abcInNumber[later]
-      return totalValue
+      break
     }
   }
   return totalValue
@@ -54,6 +48,7 @@ export function converNumberToString(n: number): string {
   for (const later in abcInNumber) {
     if (abcInNumber[later] === n) {
       letraCodificada = later
+      break
     }
   }
   return letraCodificada
