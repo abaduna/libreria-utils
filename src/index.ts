@@ -1,2 +1,2 @@
-export * from "./TransformWordinWordCodifig"
-export * from "./generatorDicionary.ts"
+export * from './TransformWordinWordCodifig'
+export * from './generatorDicionary.ts'
