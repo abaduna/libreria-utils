@@ -6,12 +6,12 @@ suma(10377, 46465465465)
 
 type AbcNumberPair = [string, number];
 const abcInNumber:AbcNumberPair[]= [
-    ["a", 1],
-    ["b", 2],
-    ["c", 3],
-    ["d", 4],
-    ["e", 5],
-    ["f", 6],
+ ["a", 1],
+ ["b", 2],
+ ["c", 3],
+ ["d", 4],
+ ["e", 5],
+ ["f", 6],
     ["g", 7],
     ["h", 8],
     ["i", 9],
