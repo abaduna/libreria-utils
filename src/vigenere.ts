@@ -1,4 +1,7 @@
 export function vigenere(key: string, str: string, mode: string): string {
+  const output: string[] = []
+  let result = 0
+  let outputStr: string = ''
   if (
     typeof key !== 'string' ||
     typeof str !== 'string' ||
@@ -6,10 +9,6 @@ export function vigenere(key: string, str: string, mode: string): string {
   ) {
     return ''
   } else {
-    const output: string[] = []
-    let result = 0
-    let outputStr: string = ''
-
     for (let i = 0; i < str.length; i++) {
       if (mode === 'encrypt') {
         result = (str.charCodeAt(i) + key.charCodeAt(i % key.length)) % 128
