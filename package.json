@@ -10,7 +10,8 @@
     "lint:fix": "npm run lint --fix",
     "check:types": "tsc --noEmit",
     "prepare": "husky install",
-    "test": "vitest run --coverage"
+    "test": "vitest run --coverage",
+    "test:mutation": "stryker run"
   },
   "exports": {
     ".": {
@@ -24,6 +25,8 @@
   "devDependencies": {
     "@commitlint/cli": "^19.2.0",
     "@commitlint/config-conventional": "^19.1.0",
+    "@stryker-mutator/core": "^8.2.6",
+    "@stryker-mutator/vitest-runner": "^8.2.6",
     "@types/node": "^20.11.29",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@vitest/coverage-v8": "^1.4.0",

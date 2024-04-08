@@ -31,16 +31,10 @@ var abcInNumber = {
 function converStrinToNumber(s) {
     var totalValue = 0;
     var lowerCaseS = s.toLowerCase();
-    // for (const later of abcInNumber) {
-    //   if (later[0] === lowerCaseS) {
-    //     totalValue = later[1]
-    //   }
-    //   return totalValue
-    // }
     for (var later in abcInNumber) {
         if (later === lowerCaseS) {
             totalValue = abcInNumber[later];
-            return totalValue;
+            break;
         }
     }
     return totalValue;
@@ -56,16 +50,20 @@ function converNumberToString(n) {
     for (var later in abcInNumber) {
         if (abcInNumber[later] === n) {
             letraCodificada = later;
+            break;
         }
     }
     return letraCodificada;
 }
 exports.converNumberToString = converNumberToString;
-function moveNWord(palabra, dicionario) {
-    var palabraToArry = palabra.split('');
+function moveNWord(word, dicionary) {
+    if (typeof word !== 'string') {
+        return '';
+    }
+    var palabraToArry = word.split('');
     var plabraCodificada = [];
     for (var i = 0; i < palabraToArry.length; i++) {
-        var numeberToPalabra = moveNPlace(palabraToArry[i], dicionario[i]);
+        var numeberToPalabra = moveNPlace(palabraToArry[i], dicionary[i]);
         var letraCodificada = converNumberToString(numeberToPalabra);
         plabraCodificada.push(letraCodificada);
     }
