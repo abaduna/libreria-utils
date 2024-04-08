@@ -44,27 +44,27 @@ export function moveNPlace(s: string, n: number): number {
   return numberOriginal + n
 }
 export function converNumberToString(n: number): string {
-  let letraCodificada: string = ''
+  let codedLetter: string = ''
   for (const later in abcInNumber) {
     if (abcInNumber[later] === n) {
-      letraCodificada = later
+      codedLetter = later
       break
     }
   }
-  return letraCodificada
+  return codedLetter
 }
 export function moveNWord(word: string, dicionary: number[]): string {
   if (typeof word !== 'string') {
     return ''
   } else {
-    const palabraToArry = word.split('')
-    const plabraCodificada: string[] = []
-    for (let i = 0; i < palabraToArry.length; i++) {
-      const numeberToPalabra = moveNPlace(palabraToArry[i], dicionary[i])
+    const WordToArry = word.split('')
+    const CodedWord: string[] = []
+    for (let i = 0; i < WordToArry.length; i++) {
+      const numeberToLetter = moveNPlace(WordToArry[i], dicionary[i])
 
-      const letraCodificada = converNumberToString(numeberToPalabra)
-      plabraCodificada.push(letraCodificada)
+      const codedLetter = converNumberToString(numeberToLetter)
+      CodedWord.push(codedLetter)
     }
-    return plabraCodificada.join('')
+    return CodedWord.join('')
   }
 }

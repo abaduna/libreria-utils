@@ -11,7 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
-
+reports
+coverage
+NodeTs
+strykerTmp
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

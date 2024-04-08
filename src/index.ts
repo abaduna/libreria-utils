@@ -1,2 +1,3 @@
 export * from './TransformWordinWordCodifig.ts'
-export * from './generatorDicionary.ts'
+export * from './Dicionarygenerator.ts'
+export * from './CessarEncryption.ts'
