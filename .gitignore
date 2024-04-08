@@ -15,6 +15,7 @@ reports
 coverage
 NodeTs
 strykerTmp
+reports/mutation
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
