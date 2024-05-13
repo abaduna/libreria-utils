@@ -38,6 +38,7 @@ describe('moveNPalabra', () => {
     expect(result).toEqual('')
   })
   it(' Transform [1,1,1] y [1,1,1] in [bbb]', () => {
+  // @ts-expect-error we want to test the undefined case
     const result = quantumEncryption('rdbqdsn', [1, 1, 1, 1, 1, 1, 1], 'blabla')
     expect(result).toEqual('')
   })

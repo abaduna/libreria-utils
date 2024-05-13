@@ -24,7 +24,8 @@ const abcInNumber: ABCInNumber = {
   w: 22,
   x: 23,
   y: 24,
-  z: 25
+  z: 25,
+  l: 26
 }
 export function converStrinToNumber(s: string): number {
   let totalValue: number = 0
@@ -61,7 +62,7 @@ export function converNumberToString(n: number): string {
 export function quantumEncryption(
   word: string,
   dicionary: number[],
-  mode: string
+  mode: 'decrypt' | 'encrypt'
 ): string {
   if (mode === 'encrypt') {
     if (typeof word !== 'string') {

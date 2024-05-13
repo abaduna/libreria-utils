@@ -1,9 +1,11 @@
 {
-  "name": "utilsabaduna",
-  "version": "0.0.0",
+  "name": "utils-criptografia",
+  "version": "1.1.7",
   "type": "module",
+  "types": "dist/index.d.ts",
   "main": "./dist/utilsabaduna.umd.cjs",
   "scripts": {
+
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .ts",
@@ -15,9 +17,13 @@
   },
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/utilsabaduna.js",
       "require": "./dist/utilsabaduna.umd.cjs"
     }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "files": [
     "dist"
@@ -38,7 +44,6 @@
     "eslint-plugin-simple-import-sort": "^12.0.0",
     "husky": "^8.0.0",
     "prettier": "^3.2.5",
-    "typescript": "*",
     "vite": "^5.0.8",
     "vite-plugin-dts": "^3.7.3",
     "vitest": "^1.4.0"

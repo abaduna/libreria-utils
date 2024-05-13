@@ -7,7 +7,7 @@ import {
 export function cesarEncryption(
   word: string,
   encryption: number,
-  mode: string
+  mode: 'decrypt' | 'encrypt'
 ): string {
   if (typeof word !== 'string') {
     return ''

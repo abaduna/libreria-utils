@@ -1,4 +1,4 @@
-export function vigenere(key: string, str: string, mode: string): string {
+export function vigenere(key: string, str: string, mode: 'decrypt' | 'encrypt'): string {
   const output: string[] = []
   let result = 0
   let outputStr: string = ''
