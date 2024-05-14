@@ -8,12 +8,19 @@ cesarEncryption => One of the simplest and most widely known encryption techniqu
 ### funcion 
 ### vigenere,cesarEncryption,quantumEncryption,Dicionarygenerator
 ### example  vigenere
-vigenere("key oh te word","meesage","encrypt")<br>
-vigenere("key oh te word","XJ^^F`P","decrypt")<br>
+```
+vigenere("key oh te word","meesage","encrypt")
+vigenere("key oh te word","XJ^^F`P","decrypt")
+```
 ### example  quantumEncryption
+```
 const dicionario = Dicionarygenerator("secet Key very long more that the text")<br>
-quantumEncryption("meesage",dicionario,"encrypt")<br>
-quantumEncryption("vqi",dicionario,"decrypt")<br>
+
+quantumEncryption("meesage",dicionario,"encrypt")
+quantumEncryption("vqi",dicionario,"decrypt")
+```
 ### example  cesarEncryption
-cesarEncryption("meesage",key of number,"encrypt")<br>
-cesarEncryption("ipab",1,"decrypt")<br>
+```
+cesarEncryption("meesage",key of number,"encrypt")
+cesarEncryption("ipab",1,"decrypt")
+```
