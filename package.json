@@ -1,6 +1,6 @@
 {
   "name": "utils-criptografia",
-  "version": "1.1.9",
+  "version": "2.0.2",
   "type": "module",
   "types": "dist/index.d.ts",
   "main": "./dist/utilsabaduna.umd.cjs",
@@ -22,6 +22,16 @@
       "require": "./dist/utilsabaduna.umd.cjs"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abaduna/libreria-utils"
+  },
+  "keywords": [
+    "Encrypt",
+    "Decrypt",
+    "Cryptography",
+    "PromiseRejectionHandledWarning"
+  ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },

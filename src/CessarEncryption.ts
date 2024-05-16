@@ -29,6 +29,7 @@ export function cesarEncryption(
         const numeberToLetter = moveNPlaceReverse(WordToArry[i], encryption)
 
         const codedLetter = converNumberToString(numeberToLetter)
+
         CodedWord.push(codedLetter)
       }
       return CodedWord.join('')
